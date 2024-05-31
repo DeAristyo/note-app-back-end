@@ -1,7 +1,7 @@
 import fs from 'fs/promises';
 import path from 'path';
 
-const notesFilePath = path.resolve('./notes.json');
+const notesFilePath = path.resolve('./src/notes.json');
 
 export const readNotesFromFile = async () => {
     try {
