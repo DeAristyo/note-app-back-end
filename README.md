@@ -184,10 +184,15 @@ Example of an error response:
 
 
 File Structure
+
 ├── handler.js
+
 ├── helper.js
+
 ├── notes.json
+
 ├── routes.js
+
 └── server.js
 
 handler.js: Contains the handler functions for each endpoint.
