@@ -208,3 +208,5 @@ Clone the repository and navigate to the project directory.
 Install the dependencies using npm install.
 Run the server using npm start.
 The API will be available at http://localhost:3000.
+=======
+Simple JS backend for notes app with Hapi.js
