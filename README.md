@@ -52,18 +52,21 @@ A simple note-taking API built with Hapi.js. This API allows users to manage not
 **GET /**
 
 GET http://localhost:3000/
+
 Response:
 
-json
+```
 Hello welcome to note taking API!
+```
 
 ### 2. Get All Notes
 GET /notes
 
 GET http://localhost:3000/notes
+
 Response:
 
-json
+```
 {
   "status": "success",
   "data": {
@@ -79,15 +82,16 @@ json
     ]
   }
 }
-
+```
 
 ### 3. Get Note by ID
 GET /notes/{id}
 
 GET http://localhost:3000/notes/{id}
+
 Response:
 
-json
+```
 {
   "status": "success",
   "data": {
@@ -101,22 +105,25 @@ json
     }
   }
 }
-
+```
 
 ### 4. Add a New Note
 POST /notes
 
 POST http://localhost:3000/notes
-Content-Type: application/json
 
+Content-Type: application/json
+```
 {
   "title": "note_title",
   "tags": ["tag1", "tag2"],
   "body": "note_body"
 }
+```
+
 Response:
 
-json
+```
 {
   "status": "success",
   "message": "Catatan berhasil ditambahkan",
@@ -124,49 +131,58 @@ json
     "noteId": "note_id"
   }
 }
+```
 
 ### 5. Update an Existing Note
 PUT /notes/{id}
 
-http
 PUT http://localhost:3000/notes/{id}
-Content-Type: application/json
 
+Content-Type: application/json
+```
 {
   "title": "updated_title",
   "tags": ["updated_tag1", "updated_tag2"],
   "body": "updated_body"
 }
+```
+
 Response:
 
-json
+```
 {
   "status": "success",
   "message": "Catatan berhasil diperbarui"
 }
+```
 
 ### 6. Delete a Note
 DELETE /notes/{id}
 
-http
 DELETE http://localhost:3000/notes/{id}
+
 Response:
 
-json
+```
 {
   "status": "success",
   "message": "Catatan berhasil dihapus"
 }
+```
+
 Error Handling
 In case of an error, the API will return a JSON response with the appropriate status code and message.
 
 Example of an error response:
 
-json
+```
 {
   "status": "error",
   "message": "Internal Server Error"
 }
+```
+
+
 File Structure
 ├── handler.js
 ├── helper.js
