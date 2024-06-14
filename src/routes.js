@@ -13,7 +13,7 @@ const routes = [
         path: '/',
         handler: (request, h) => {
 
-            return 'Hello NAYA INI BISA!';
+            return 'Hello this is note taking API';
         }
     },
     {
